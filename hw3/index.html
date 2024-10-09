@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Acme-template</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      body,
+      .header-text,
+      .header-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 600px;
+        font-family: inter;
+        background-color: #ffffff;
+      }
+      header {
+        height: 136px;
+        color: #98a2b3;
+      }
+      .header-text {
+        height: 48px;
+      }
+      .header-text p {
+        width: 114px;
+        height: 24px;
+        font-size: 15px;
+        font-weight: 400;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+      .header-text a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        font-family: inter;
+        color: #98a2b3;
+      }
+      img {
+        width: 120px;
+        height: 56px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      .main-header-text {
+        width: 552px;
+        height: 92px;
+        margin: 24px;
+      }
+      h1 {
+        width: 552px;
+        height: 36px;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .main-header-text p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #667085;
+      }
+      .table-container {
+        padding: 24px;
+      }
+      tr {
+        height: 56px;
+      }
+      .item-column {
+        width: 376px;
+        text-align: left;
+        color: #667085;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .item-head,
+      .qty-head,
+      .price-head,
+      .item-foot,
+      .price-foot {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .qty-column {
+        width: 50px;
+        text-align: right;
+        color: #101828;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .price-column {
+        width: 126px;
+        text-align: right;
+        color: #101828;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .footer-container {
+        padding: 24px;
+      }
+      .footer-container table {
+        table-layout: fixed;
+        width: 552px;
+      }
+      .logo-column {
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+      .footer-logo {
+        margin-top: 0;
+      }
+      .logo-column p {
+        height: 24px;
+        margin: 0;
+      }
+      .footer-company-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: #101828;
+      }
+      .footer-company-slogan {
+        font-size: 15px;
+        font-weight: 400;
+        color: #667085;
+      }
+
+      .address-column {
+        font-size: 15px;
+        font-weight: 400;
+        color: #667085;
+        text-align: left;
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-text">
+          <p><a href="#">View in browser</a></p>
+        </div>
+        <div class="header-image">
+          <img src="logo-acme.png" alt="logo acme" />
+        </div>
+      </header>
+      <main>
+        <div class="main-header">
+          <div class="main-header-text">
+            <h1>Functional Style</h1>
+            <p>
+              Combine practicality and style effortlessly with our furniture,
+              offering functional designs that enhance your living space
+            </p>
+          </div>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th class="item-column item-head">Item</th>
+                <th class="qty-column qty-head">Qty</th>
+                <th class="price-column price-head">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="item-column">Elegant Feast</td>
+                <td class="qty-column">2</td>
+                <td class="price-column">$499.99</td>
+              </tr>
+
+              <tr>
+                <td class="item-column">Modern Fusion</td>
+                <td class="qty-column">2</td>
+                <td class="price-column">$699.99</td>
+              </tr>
+
+              <tr>
+                <td class="item-column">Rustic Charm</td>
+                <td class="qty-column">2</td>
+                <td class="price-column">$399.99</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="item-column item-foot">Total</td>
+                <td class="qty-column qty-foot">6</td>
+                <td class="price-column price-foot">$3194.99</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <table>
+            <tr>
+              <td class="logo-column">
+                <img src="logo-acme.png" alt="logo acme" class="footer-logo" />
+                <p class="footer-company-name">Acme corporation</p>
+                <p class="footer-company-slogan">Think different</p>
+              </td>
+              <td class="address-column">123 Main Street Anytown, CA 12345</td>
+            </tr>
+          </table>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
